@@ -39,7 +39,9 @@ alguna.
 Manual: En este modo cada vez que se encuentra un virus se pone en cuarentena y se le pregunta al
 usuario por consola que es lo que se desea hacer con el archivo, si desea eliminarlo o conservarlo. A
 menos que sea un virus de nivel 4 o 5 que se elimina inmediatamente, aunque se le notifica al usuario.
-Su funcionamiento es el siguiente.
+
+
+Su funcionamiento es el siguiente:
 Se le pasara un archivo que tenga los nombres de los archivos que se desea revisar junto con su CRC32
 y el tamaño original del archivo en bytes, el CRC32 es un simple código de 32bits que tiene un
 resumen de todo un archivo, el antivirus debe hacer primero un escaneo rápido del archivo para
@@ -47,22 +49,28 @@ confirmar si el CRC32 coincide con el dado, en caso de no ser así, se procede a
 busca de virus, comparando con cada uno de los de la base de datos, dependiendo de si el archivo
 coincide con el patrón de un virus o no el antivirus hará alguna de las acciones mencionadas
 anteriormente dependiendo del modo de configuración, véase Manual o Automático.
+
 Cuando un archivo esta en cuarentena su nombre cambia, se le pone un . antes y se le agrega la
 extensión .cuarentena. Ejemplo:
+
 virus.exe
 .virus.exe.cuarentena
 →
 tucrush.png
 .tucrush.png.cuarentena
 →
+
 Para ver los archivos en cuarentena se le tiene que pasar unicamente -c al programa, y listara uno por
-uno los archivos en cuarentena con la opción de sacarlos de cuarentena o no, ejemplo
+uno los archivos en cuarentena con la opción de sacarlos de cuarentena o no, ejemplo:
+
 ./Antivirus -c
+
 Archivos en cuarentena:
 virus.exe ¿Desea restaurarlo? (y/N)
 n
 tucrush.png ¿Desea restaurarlo? (y/N)
 y
+
 Se ha restaurado tucrush.png
 para meter un archivo en cuarentena a pesar de que tenga o no virus se usa -c y los nombres de los
 archivos que se desea meter en cuarentena, ejemplo:
