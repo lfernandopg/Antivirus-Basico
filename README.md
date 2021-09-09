@@ -54,10 +54,10 @@ Cuando un archivo esta en cuarentena su nombre cambia, se le pone un . antes y s
 extensión .cuarentena. Ejemplo:
 
 virus.exe →
-.virus.exe.cuarentena
+virus.exe.cuarentena
 
 tucrush.png →
-.tucrush.png.cuarentena
+tucrush.png.cuarentena
 
 
 Para ver los archivos en cuarentena se le tiene que pasar unicamente -c al programa, y listara uno por
@@ -74,11 +74,14 @@ y
 Se ha restaurado tucrush.png
 para meter un archivo en cuarentena a pesar de que tenga o no virus se usa -c y los nombres de los
 archivos que se desea meter en cuarentena, ejemplo:
+
 ./antivirus -c tarea.pdf secretos.txt
 tarea.pdf Se ha puesto en cuarentena
 secretos.txt Se ha puesto en cuarentena
+
 En caso de que -c aparezca después de algún nombre simplemente se ignora
 Eliminar los virus.
+
 Para eliminar los virus simplemente se hace un calculo. Si el archivo es mas grande que el original
 entonces probablemente la diferencia en tamaño sea el tamaño del virus, por lo que una vez se sabe
 donde esta (por el patrón) se pueden eliminar todos los bytes y revisar de nuevo el archivo para ver si
@@ -87,12 +90,14 @@ y se coloca como desinfectado, sobrescribiendo el nuevo archivo sin virus sobre 
 que el CRC no coincida entonces se considera como un fallo al eliminar el virus y dependiendo del
 modo del programa, si es automático se elimina el archivo y si es manual se le pregunta al usuario que
 desea hacer.
+
 Suponiendo que el contenido de archivos.txt es:
 a.exe D2A22056 32145
 b.exe FA343245 32451
 c.exe ABCDEF12 54234
 d.txt 01859354 543245
 e.png 94032412 1234634
+
 Ejemplo modo Automático
 ./Antivirus -m A archivos.txt
 Se elimino un virus de a.exe y se restauro
