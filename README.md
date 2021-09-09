@@ -117,5 +117,6 @@ Se conservo b.exe
 n
 Se mantuvo en cuarentena
 Se removio el archivo c.exe porque contenia un virus altamente peligroso
+
 En caso de que no se especifique un modo o el argumentos después de -m sea algo no definido, se
 usara el modo automático.
