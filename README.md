@@ -53,12 +53,12 @@ anteriormente dependiendo del modo de configuración, véase Manual o Automátic
 Cuando un archivo esta en cuarentena su nombre cambia, se le pone un . antes y se le agrega la
 extensión .cuarentena. Ejemplo:
 
-virus.exe
+virus.exe →
 .virus.exe.cuarentena
-→
-tucrush.png
+
+tucrush.png →
 .tucrush.png.cuarentena
-→
+
 
 Para ver los archivos en cuarentena se le tiene que pasar unicamente -c al programa, y listara uno por
 uno los archivos en cuarentena con la opción de sacarlos de cuarentena o no, ejemplo:
