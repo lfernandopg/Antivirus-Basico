@@ -16,6 +16,7 @@ tienen y riesgo es un valor numérico del 1 al 5 que indica que tan peligroso es
 3. Alta
 4. Peligrosa
 5. Ultra peligrosa
+
 Los virus con riesgo 1 se pueden eliminar del archivo sin problema alguno o mantener en cuarentena,
 estos normalmente son cracks o hacks que se les ponen a los juegos, cuya característica los convierte en
 virus debido a que modifican el código pero no pueden hacer nada mas. Los virus con riesgo 2 por
@@ -30,9 +31,11 @@ la única opción es eliminar el archivo. Los virus de tipo 5 son los mas peligr
 rápido esparcimiento, tienen la peculiaridad de que viajan por, internet, bluetooth, wifi, pendrive,
 infrarrojo e incluso se han registrado casos donde usan GSM.
 El programa tiene 2 modos de configuración:
+
 Automático: En este modo el programa por defecto intenta eliminar los virus de los archivos donde se
 puede y donde no puede o falla al eliminarlo simplemente elimina los archivos sin confirmación
 alguna.
+
 Manual: En este modo cada vez que se encuentra un virus se pone en cuarentena y se le pregunta al
 usuario por consola que es lo que se desea hacer con el archivo, si desea eliminarlo o conservarlo. A
 menos que sea un virus de nivel 4 o 5 que se elimina inmediatamente, aunque se le notifica al usuario.
